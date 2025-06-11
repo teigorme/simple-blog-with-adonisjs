@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Simple Blog with Adonisjs
-    </title>
+@layout.app({ title: "Welcome page title" })
+  @slot('meta')
+    <meta name="description" content="A welcome page made with EdgeJS" />
+  @endslot
+  
+  @slot('main')
+    <h1>
+      Hello world
+    </h1>
+  @endslot
+@end
 
-    <script src="https://cdn.tailwindcss.com">
-      
-    </script>
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @stack('dumper')
-  </head>
-  <body class="min-h-screen w-screen font-sans ">
-    <h2 class="text">
-      Hello World
-    </h2>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js">
-      
-    </script>
-  </body>
-</html>

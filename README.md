@@ -1,1 +1,1 @@
-# simple-blog-with-adonisjs
+# template-adonisjs
